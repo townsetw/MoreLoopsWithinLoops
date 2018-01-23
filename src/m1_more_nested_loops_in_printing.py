@@ -12,9 +12,9 @@ def main():
     #run_test_triangle_right_justified()
     #run_test_triangle_upside_down()
     #run_test_vee()
-    run_test_numbers_constant_forward()
+    #run_test_numbers_constant_forward()
     #run_test_numbers_constant_backwards()
-    #run_test_numbers_increasing_forward()
+    run_test_numbers_increasing_forward()
 
 
 def run_test_triangle_right_justified():
@@ -241,7 +241,7 @@ def numbers_constant_forward(r, maxnum, n):
     Preconditions:  r, maxnum and n are positive integers.
     """
     # ------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # DONE: 5. Implement and test this function.
     #          Some tests are already written for you (above).
     #
     # HINT: What loop structure do you need for this problem?
@@ -252,6 +252,12 @@ def numbers_constant_forward(r, maxnum, n):
     #   defeat the goal of providing practice at loops within loops.
     # ------------------------------------------------------------------
 
+    for j in range(r):
+        for k in range(1, maxnum + 1):
+            for z in range(n):
+                print(k, end='')
+            print(end=' ')
+        print()
 
 def run_test_numbers_constant_backwards():
     """ Tests the    numbers_constant_backwards    function. """
@@ -285,7 +291,7 @@ def numbers_constant_backwards(r, maxnum, n):
     Preconditions:  r, maxnum and n are positive integers.
     """
     # ------------------------------------------------------------------
-    # TODO: 6. Implement and test this function.
+    # DONE: 6. Implement and test this function.
     #          Some tests are already written for you (above).
     #
     # IMPLEMENTATION RESTRICTION:
@@ -294,6 +300,12 @@ def numbers_constant_backwards(r, maxnum, n):
     #   defeat the goal of providing practice at loops within loops.
     # ------------------------------------------------------------------
 
+    for j in range(r):
+        for k in range(maxnum, 0, -1):
+            for z in range(n):
+                print(k, end='')
+            print(end=' ')
+        print()
 
 def run_test_numbers_increasing_forward():
     """ Tests the    numbers_increasing_forward    function. """
@@ -337,7 +349,7 @@ def numbers_increasing_forward(r, maxnum):
     Preconditions:  r and maxnum are positive integers.
     """
     # ------------------------------------------------------------------
-    # TODO: 7. Implement and test this function.
+    # DONE: 7. Implement and test this function.
     #          Some tests are already written for you (above).
     #
     # IMPLEMENTATION RESTRICTION:
@@ -346,6 +358,12 @@ def numbers_increasing_forward(r, maxnum):
     #   defeat the goal of providing practice at loops within loops.
     # ------------------------------------------------------------------
 
+    for j in range(r):
+        for k in range(1, maxnum + 1):
+            for p in range(1, k + 1):
+                print(k, end='')
+            print(end=' ')
+        print()
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
